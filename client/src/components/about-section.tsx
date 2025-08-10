@@ -4,7 +4,11 @@ export default function AboutSection() {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section 
+      id="about" 
+      className="py-20 bg-white"
+      aria-labelledby="about-title"
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div 
           ref={ref}
@@ -44,6 +48,10 @@ export default function AboutSection() {
                 alt="Modern data science and AI workspace with multiple monitors showing code and analytics" 
                 className="rounded-xl shadow-lg"
                 data-testid="about-workspace-image"
+                loading="lazy"
+                width="800"
+                height="600"
+                decoding="async"
               />
             </div>
           </div>

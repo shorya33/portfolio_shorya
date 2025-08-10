@@ -82,10 +82,44 @@
 
   html {
     scroll-behavior: smooth;
+    font-display: swap;
   }
 
   body {
     @apply font-sans antialiased bg-slate-50 text-foreground;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Prevent layout shift for images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Optimize focus indicators for accessibility */
+  :focus {
+    outline: 2px solid hsl(var(--primary));
+    outline-offset: 2px;
+  }
+
+  /* Skip link for accessibility */
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: hsl(var(--primary));
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    transition: top 0.3s;
+    z-index: 100;
+  }
+
+  .skip-link:focus {
+    top: 6px;
   }
 }
 

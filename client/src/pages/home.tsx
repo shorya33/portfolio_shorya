@@ -12,16 +12,20 @@ import ContactSection from "@/components/contact-section";
 export default function Home() {
   return (
     <div className="font-sans bg-slate-50 text-gray-800">
-      <Navigation />
-      <HeroSection />
-      <AboutSection />
-      <SkillsSection />
-      <CertificationsSection />
-      <ExperienceSection />
-      <TeachingSection />
-      <ProjectsSection />
-      <EducationSection />
-      <ContactSection />
+      <header>
+        <Navigation />
+      </header>
+      <main id="main-content">
+        <HeroSection />
+        <AboutSection />
+        <SkillsSection />
+        <CertificationsSection />
+        <ExperienceSection />
+        <TeachingSection />
+        <ProjectsSection />
+        <EducationSection />
+        <ContactSection />
+      </main>
       
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">

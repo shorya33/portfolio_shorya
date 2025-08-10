@@ -55,7 +55,11 @@ export default function SkillsSection() {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-slate-50">
+    <section 
+      id="skills" 
+      className="py-20 bg-slate-50"
+      aria-labelledby="skills-title"
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div 
           ref={ref}

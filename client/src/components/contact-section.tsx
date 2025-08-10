@@ -78,7 +78,11 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section 
+      id="contact" 
+      className="py-20 bg-white"
+      aria-labelledby="contact-title"
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div 
           ref={ref}

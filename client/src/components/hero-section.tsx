@@ -14,7 +14,10 @@ export default function HeroSection() {
   });
 
   return (
-    <section className="pt-16 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 min-h-screen flex items-center">
+    <section 
+      className="pt-16 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 min-h-screen flex items-center"
+      aria-label="Hero section introducing Shorya Dwivedi"
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
@@ -75,9 +78,13 @@ export default function HeroSection() {
           <div className="flex justify-center lg:justify-end animate-scale-in">
             <img 
               src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" 
-              alt="Shorya Dwivedi - Professional Developer Portrait" 
+              alt="Shorya Dwivedi - Professional DevOps and MLOps Engineer" 
               className="w-80 h-80 object-cover rounded-2xl shadow-2xl"
               data-testid="hero-profile-image"
+              loading="eager"
+              width="320"
+              height="320"
+              decoding="async"
             />
           </div>
         </div>

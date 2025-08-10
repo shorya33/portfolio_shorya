@@ -88,7 +88,11 @@ export default function ProjectsSection() {
   };
 
   return (
-    <section id="projects" className="py-20 bg-white">
+    <section 
+      id="projects" 
+      className="py-20 bg-white"
+      aria-labelledby="projects-title"
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div 
           ref={ref}
@@ -108,6 +112,10 @@ export default function ProjectsSection() {
                     alt={project.imageAlt}
                     className="w-full h-48 object-cover rounded-lg"
                     data-testid={`project-image-${project.id}`}
+                    loading="lazy"
+                    width="800"
+                    height="400"
+                    decoding="async"
                   />
                 </div>
                 <h3 className="text-2xl font-semibold mb-4 text-gray-900" data-testid={`project-title-${project.id}`}>

@@ -37,7 +37,11 @@ export default function TeachingSection() {
   ];
 
   return (
-    <section id="teaching" className="py-20 bg-white">
+    <section 
+      id="teaching" 
+      className="py-20 bg-white"
+      aria-labelledby="teaching-title"
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div 
           ref={ref}

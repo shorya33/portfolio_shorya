@@ -39,10 +39,12 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-200 z-50" data-testid="navigation-header">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="font-bold text-xl gradient-text" data-testid="logo-text">Shorya Dwivedi</div>
+    <>
+      <a href="#main-content" className="skip-link">Skip to main content</a>
+      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-200 z-50" data-testid="navigation-header" role="navigation" aria-label="Main navigation">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <div className="font-bold text-xl gradient-text" data-testid="logo-text">Shorya Dwivedi</div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
@@ -149,7 +151,8 @@ export default function Navigation() {
             </div>
           </div>
         )}
-      </div>
-    </nav>
+        </div>
+      </nav>
+    </>
   );
 }
