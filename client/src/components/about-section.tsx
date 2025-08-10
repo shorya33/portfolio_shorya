@@ -22,6 +22,11 @@ export default function AboutSection() {
                 Recently expanding into MLOps, I've developed expertise in machine learning pipelines, 
                 model deployment automation, and integrating ML workflows with traditional DevOps practices.
               </p>
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed" data-testid="about-description-3">
+                Additionally, I have experience as a programming instructor, having taught Python and Flutter/Dart 
+                to aspiring developers, combining my technical expertise with a passion for knowledge sharing 
+                and mentoring the next generation of developers.
+              </p>
               <div className="grid grid-cols-2 gap-6">
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2" data-testid="about-focus-label">Current Focus</h4>

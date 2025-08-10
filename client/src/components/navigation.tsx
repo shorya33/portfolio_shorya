@@ -11,7 +11,7 @@ export default function Navigation() {
     function highlightNav() {
       let current = '';
       sections.forEach(section => {
-        const sectionTop = section.offsetTop;
+        const sectionTop = (section as HTMLElement).offsetTop;
         if (window.scrollY >= (sectionTop - 100)) {
           current = section.getAttribute('id') || '';
         }
@@ -28,7 +28,7 @@ export default function Navigation() {
     const target = document.querySelector(href);
     if (target) {
       const headerOffset = 80;
-      const elementPosition = target.offsetTop;
+      const elementPosition = (target as HTMLElement).offsetTop;
       const offsetPosition = elementPosition - headerOffset;
 
       window.scrollTo({
@@ -66,6 +66,13 @@ export default function Navigation() {
               data-testid="nav-experience"
             >
               Experience
+            </button>
+            <button 
+              onClick={() => handleLinkClick('#teaching')} 
+              className={`nav-link transition-colors ${activeSection === 'teaching' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}
+              data-testid="nav-teaching"
+            >
+              Teaching
             </button>
             <button 
               onClick={() => handleLinkClick('#projects')} 
@@ -117,6 +124,13 @@ export default function Navigation() {
                 data-testid="mobile-nav-experience"
               >
                 Experience
+              </button>
+              <button 
+                onClick={() => handleLinkClick('#teaching')} 
+                className="block w-full text-left px-3 py-2 text-gray-700 hover:text-primary transition-colors"
+                data-testid="mobile-nav-teaching"
+              >
+                Teaching
               </button>
               <button 
                 onClick={() => handleLinkClick('#projects')} 

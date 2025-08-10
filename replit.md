@@ -1,6 +1,6 @@
 # Overview
 
-This is a personal portfolio website for Shorya Dwivedi, a DevOps and MLOps Engineer. The application is built as a full-stack web application featuring a React frontend with TypeScript, an Express.js backend, and a PostgreSQL database. The portfolio showcases professional experience, skills, projects, certifications, and education, with a contact form for visitor inquiries.
+This is a personal portfolio website for Shorya Dwivedi, a DevOps and MLOps Engineer. The application is built as a full-stack web application featuring a React frontend with TypeScript, an Express.js backend, and a PostgreSQL database. The portfolio showcases professional experience, teaching experience, skills, projects, certifications, and education, with a contact form for visitor inquiries.
 
 The application follows modern web development practices with a monorepo structure, shared type definitions, and a clean separation between client and server code. It's designed to be responsive, accessible, and visually appealing with smooth animations and professional styling.
 
