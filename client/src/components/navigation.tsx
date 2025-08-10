@@ -91,7 +91,7 @@ export default function Navigation() {
               Contact
             </button>
             <a 
-              href="/Shorya_Dwivedi_Resume.pdf"
+              href="https://docs.google.com/document/d/1XOhMqRMHKeuElAQWg_eayg_gvDUQRL2PxV6tQH8GSdk/export?format=pdf"
               download="Shorya_Dwivedi_Resume.pdf"
               className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm inline-flex items-center gap-2"
               data-testid="nav-download-resume"

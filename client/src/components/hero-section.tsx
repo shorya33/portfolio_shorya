@@ -40,7 +40,7 @@ export default function HeroSection() {
                 Get In Touch
               </button>
               <a 
-                href="/Shorya_Dwivedi_Resume.pdf"
+                href="https://docs.google.com/document/d/1XOhMqRMHKeuElAQWg_eayg_gvDUQRL2PxV6tQH8GSdk/export?format=pdf"
                 download="Shorya_Dwivedi_Resume.pdf"
                 className="bg-gradient-to-r from-green-600 to-green-700 text-white px-8 py-3 rounded-lg hover:from-green-700 hover:to-green-800 transition-all duration-300 text-center inline-flex items-center justify-center gap-2 font-semibold shadow-lg hover:shadow-xl"
                 data-testid="button-download-resume"
@@ -86,7 +86,7 @@ export default function HeroSection() {
           </div>
           <div className="flex justify-center lg:justify-end animate-scale-in">
             <img 
-              src="/shorya-profile.jpg" 
+              src="/shorya-profile.png" 
               alt="Shorya Dwivedi - Professional DevOps and MLOps Engineer" 
               className="w-80 h-80 object-cover rounded-2xl shadow-2xl"
               data-testid="hero-profile-image"
