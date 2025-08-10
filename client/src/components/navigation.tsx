@@ -90,6 +90,15 @@ export default function Navigation() {
             >
               Contact
             </button>
+            <a 
+              href="/Shorya_Dwivedi_Resume.pdf"
+              download="Shorya_Dwivedi_Resume.pdf"
+              className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm inline-flex items-center gap-2"
+              data-testid="nav-download-resume"
+            >
+              <i className="fas fa-download text-sm"></i>
+              Resume
+            </a>
           </div>
           
           {/* Mobile Menu Button */}
@@ -148,6 +157,15 @@ export default function Navigation() {
               >
                 Contact
               </button>
+              <a 
+                href="/Shorya_Dwivedi_Resume.pdf"
+                download="Shorya_Dwivedi_Resume.pdf"
+                className="block w-full text-left px-3 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors mx-3 my-2 text-center"
+                data-testid="mobile-nav-download-resume"
+              >
+                <i className="fas fa-download mr-2"></i>
+                Download Resume
+              </a>
             </div>
           </div>
         )}

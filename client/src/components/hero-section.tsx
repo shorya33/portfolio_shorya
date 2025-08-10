@@ -34,14 +34,23 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors text-center"
+                className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-all duration-300 text-center font-semibold"
                 data-testid="button-get-in-touch"
               >
                 Get In Touch
               </button>
+              <a 
+                href="/Shorya_Dwivedi_Resume.pdf"
+                download="Shorya_Dwivedi_Resume.pdf"
+                className="bg-gradient-to-r from-green-600 to-green-700 text-white px-8 py-3 rounded-lg hover:from-green-700 hover:to-green-800 transition-all duration-300 text-center inline-flex items-center justify-center gap-2 font-semibold shadow-lg hover:shadow-xl"
+                data-testid="button-download-resume"
+              >
+                <i className="fas fa-download"></i>
+                Download Resume
+              </a>
               <button 
                 onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-                className="border-2 border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-white transition-colors text-center"
+                className="border-2 border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-white transition-all duration-300 text-center font-semibold"
                 data-testid="button-view-projects"
               >
                 View Projects
