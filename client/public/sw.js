@@ -5,6 +5,7 @@ const urlsToCache = [
   '/index.html',
   '/manifest.json',
   '/sitemap.xml',
+  '/shorya-profile.jpg',
   '/Shorya_Dwivedi_Resume.pdf',
   '/Shorya_Dwivedi_Resume_Latest.pdf',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
