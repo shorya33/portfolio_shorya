@@ -86,7 +86,7 @@ export default function HeroSection() {
           </div>
           <div className="flex justify-center lg:justify-end animate-scale-in">
             <img 
-              src="/shorya-profile.png" 
+              src={`${import.meta.env.BASE_URL}shorya-profile.png`}
               alt="Shorya Dwivedi - Professional DevOps and MLOps Engineer" 
               className="w-80 h-80 object-cover rounded-2xl shadow-2xl"
               data-testid="hero-profile-image"
