@@ -84,11 +84,11 @@ export default function HeroSection() {
               </a>
             </div>
           </div>
-          <div className="flex justify-center lg:justify-end animate-scale-in">
+          <div className="flex justify-center lg:justify-end animate-scale-in pt-8">
             <img 
               src={`${import.meta.env.BASE_URL}shorya-profile.png`}
               alt="Shorya Dwivedi - Professional DevOps and MLOps Engineer" 
-              className="w-80 h-80 object-cover rounded-2xl shadow-2xl"
+              className="w-80 h-80 object-cover object-top rounded-full shadow-2xl border-4 border-gradient-to-br from-primary to-accent hover:scale-105 transition-transform duration-500"
               data-testid="hero-profile-image"
               loading="eager"
               width="320"
@@ -96,6 +96,9 @@ export default function HeroSection() {
               decoding="async"
             />
           </div>
+
+
+
         </div>
       </div>
     </section>
