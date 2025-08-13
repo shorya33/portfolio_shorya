@@ -122,10 +122,10 @@
     <meta name="google-site-verification" content="your-google-site-verification-code" />
     
     <!-- Service Worker Registration -->
-    <script type="module">
+    <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
-          navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`)
+          navigator.serviceWorker.register('/portfolio_shorya/sw.js')
             .then(function(registration) {
               console.log('SW registered: ', registration);
             })
