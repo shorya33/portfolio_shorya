@@ -13,25 +13,14 @@ export default function ExperienceSection() {
       achievements: [
         "Designed and built AI agents using LangChain and LangGraph with tool calling and multi-step workflows to automate operational and engineering tasks",
         "Deployed and operated agentic AI services on AWS and Kubernetes (EKS), applying CI/CD, monitoring and autoscaling to keep them reliable in production",
+        "Ensured high availability of production systems on AWS and Kubernetes, minimizing downtime and improving performance",
         "Defined SLIs, SLOs and alerting strategies, improving visibility into system health and reliability metrics",
         "Led incident response and RCA, running post-incident reviews and implementing preventive fixes to reduce recurring failures",
         "Built proactive monitoring and alerting pipelines with Prometheus, Grafana and CloudWatch for early anomaly detection",
         "Automated operational tasks with Python and Bash, and built self-healing mechanisms and automated recovery workflows for common failures",
+        "Managed scalable, multi-region AWS infrastructure for high availability and disaster recovery",
         "Implemented CI/CD with GitHub Actions and GitOps (FluxCD) for safe, frequent and reliable deployments",
-        "Managed scalable, multi-region AWS infrastructure for high availability and disaster recovery"
-      ]
-    },
-    {
-      id: "sarb-alliance",
-      title: "DevOps Engineer (Contract)",
-      company: "Sarb Alliance Hospitality P.V.T",
-      location: "India (Remote)",
-      duration: "Jun 2023 – May 2025",
-      achievements: [
-        "Automated static site deployment pipelines using Amazon S3, CloudFront, and GitHub Actions",
-        "Deployed and managed EKS clusters and IAM policies for secure microservice orchestration",
-        "Provisioned cloud infrastructure using Terraform, ensuring environment consistency",
-        "Orchestrated event-driven integrations with AWS services (Cognito, EventBridge, SQS, SNS) for backend automation"
+        "Worked with security teams to enforce secure infrastructure practices and compliance standards"
       ]
     }
   ];
