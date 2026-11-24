@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://shorya-dwivedi-portfolio.replit.app/sitemap.xml
+Sitemap: https://portfolio.vtechvibrant.in/sitemap.xml
 
 # Allow search engines to crawl all content
 User-agent: Googlebot

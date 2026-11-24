@@ -111,8 +111,8 @@ export default function ContactSection() {
                   <i className="fas fa-phone text-2xl text-primary mr-4"></i>
                   <div>
                     <p className="font-medium text-gray-900">Phone</p>
-                    <a href="tel:+919137349571" className="text-gray-600 hover:text-primary transition-colors">
-                      (+91) 9137349571
+                    <a href="tel:+917355753337" className="text-gray-600 hover:text-primary transition-colors">
+                      (+91) 7355753337
                     </a>
                   </div>
                 </div>
