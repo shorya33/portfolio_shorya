@@ -15,9 +15,7 @@ export default function TeachingSection() {
         "Created course materials including video tutorials, code examples, and quizzes to enhance engagement and retention",
         "Assisted students with project development and debugging to prepare them for industry-level app development challenges",
         "Organized periodic assessments and provided constructive feedback to track student progress and performance"
-      ],
-      icon: "fab fa-google-play",
-      color: "text-blue-500"
+      ]
     },
     {
       id: "python-instructor",
@@ -30,9 +28,7 @@ export default function TeachingSection() {
         "Designed practical projects and assignments to simulate real-world problem solving using Python",
         "Provided personalized mentorship and feedback to help students improve coding skills and debug effectively",
         "Facilitated student discussions and Q&A sessions to foster collaborative learning environments"
-      ],
-      icon: "fab fa-python",
-      color: "text-green-600"
+      ]
     }
   ];
 
@@ -47,30 +43,29 @@ export default function TeachingSection() {
           ref={ref}
           className={`animate-on-scroll ${isVisible ? 'animated' : ''}`}
         >
-          <h2 className="text-3xl lg:text-4xl font-bold text-center mb-16 gradient-text" data-testid="teaching-title">Teaching Experience</h2>
-          <div className="space-y-12">
+          <h2 className="text-3xl lg:text-4xl font-bold text-center mb-16 section-heading justify-center" data-testid="teaching-title">Teaching Experience</h2>
+          <div className="space-y-12 max-w-4xl mx-auto">
             {teachingExperiences.map((exp) => (
-              <div key={exp.id} className="bg-slate-50 p-8 rounded-xl shadow-lg" data-testid={`teaching-${exp.id}`}>
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
-                  <div className="flex items-center">
-                    <i className={`${exp.icon} text-4xl ${exp.color} mr-4`}></i>
+              <div key={exp.id} className="timeline-item" data-testid={`teaching-${exp.id}`}>
+                <div className="panel p-8" data-testid={`teaching-panel-${exp.id}`}>
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
                     <div>
-                      <h3 className="text-2xl font-semibold text-gray-900" data-testid={`teaching-title-${exp.id}`}>{exp.title}</h3>
-                      <p className="text-lg text-primary font-medium" data-testid={`teaching-company-${exp.id}`}>{exp.company}</p>
+                      <h3 className="text-xl font-display font-semibold text-gray-900" data-testid={`teaching-title-${exp.id}`}>{exp.title}</h3>
+                      <p className="text-primary font-medium" data-testid={`teaching-company-${exp.id}`}>{exp.company}</p>
+                    </div>
+                    <div className="text-gray-500 mt-2 md:mt-0">
+                      <p className="font-mono text-sm" data-testid={`teaching-duration-${exp.id}`}>{exp.duration}</p>
                     </div>
                   </div>
-                  <div className="text-gray-500 mt-2 md:mt-0">
-                    <p className="font-medium" data-testid={`teaching-duration-${exp.id}`}>{exp.duration}</p>
-                  </div>
+                  <ul className="space-y-3 text-gray-700">
+                    {exp.achievements.map((achievement, index) => (
+                      <li key={index} className="flex items-start" data-testid={`teaching-achievement-${exp.id}-${index}`}>
+                        <span className="w-1 h-1 rounded-full bg-primary mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>{achievement}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <ul className="space-y-3 text-gray-700">
-                  {exp.achievements.map((achievement, index) => (
-                    <li key={index} className="flex items-start" data-testid={`teaching-achievement-${exp.id}-${index}`}>
-                      <i className="fas fa-chalkboard-teacher text-accent mt-1 mr-3 flex-shrink-0"></i>
-                      <span>{achievement}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
             ))}
           </div>

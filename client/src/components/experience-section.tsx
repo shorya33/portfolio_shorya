@@ -6,15 +6,19 @@ export default function ExperienceSection() {
   const experiences = [
     {
       id: "v2solutions",
-      title: "DevOps Engineer",
+      title: "DevOps / Site Reliability Engineer & AI Agent Developer",
       company: "V2Solutions",
-      location: "Navi Mumbai, India",
+      location: "Mumbai, India",
       duration: "Jul 2025 – Present",
       achievements: [
-        "Provisioned scalable AWS infrastructure using Terraform workspaces to support isolated dev, staging, and prod environments",
-        "Developed reusable GitHub Actions workflows to unify CI/CD pipelines for multiple microservices",
-        "Integrated OIDC with GitHub Actions for secure, credential-free AWS authentication",
-        "Built custom Docker version controller for consistent base image management using centralized ARG-based templates"
+        "Designed and built AI agents using LangChain and LangGraph with tool calling and multi-step workflows to automate operational and engineering tasks",
+        "Deployed and operated agentic AI services on AWS and Kubernetes (EKS), applying CI/CD, monitoring and autoscaling to keep them reliable in production",
+        "Defined SLIs, SLOs and alerting strategies, improving visibility into system health and reliability metrics",
+        "Led incident response and RCA, running post-incident reviews and implementing preventive fixes to reduce recurring failures",
+        "Built proactive monitoring and alerting pipelines with Prometheus, Grafana and CloudWatch for early anomaly detection",
+        "Automated operational tasks with Python and Bash, and built self-healing mechanisms and automated recovery workflows for common failures",
+        "Implemented CI/CD with GitHub Actions and GitOps (FluxCD) for safe, frequent and reliable deployments",
+        "Managed scalable, multi-region AWS infrastructure for high availability and disaster recovery"
       ]
     },
     {
@@ -43,28 +47,30 @@ export default function ExperienceSection() {
           ref={ref}
           className={`animate-on-scroll ${isVisible ? 'animated' : ''}`}
         >
-          <h2 className="text-3xl lg:text-4xl font-bold text-center mb-16 gradient-text" data-testid="experience-title">Work Experience</h2>
-          <div className="space-y-12">
+          <h2 className="text-3xl lg:text-4xl font-bold text-center mb-16 section-heading justify-center" data-testid="experience-title">Work Experience</h2>
+          <div className="space-y-12 max-w-4xl mx-auto">
             {experiences.map((exp) => (
-              <div key={exp.id} className="bg-white p-8 rounded-xl shadow-lg" data-testid={`experience-${exp.id}`}>
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
-                  <div>
-                    <h3 className="text-2xl font-semibold text-gray-900" data-testid={`experience-title-${exp.id}`}>{exp.title}</h3>
-                    <p className="text-lg text-primary font-medium" data-testid={`experience-company-${exp.id}`}>{exp.company}</p>
-                    <p className="text-gray-600" data-testid={`experience-location-${exp.id}`}>{exp.location}</p>
+              <div key={exp.id} className="timeline-item" data-testid={`experience-${exp.id}`}>
+                <div className="panel p-8" data-testid={`experience-panel-${exp.id}`}>
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+                    <div>
+                      <h3 className="text-xl font-display font-semibold text-gray-900" data-testid={`experience-title-${exp.id}`}>{exp.title}</h3>
+                      <p className="text-primary font-medium" data-testid={`experience-company-${exp.id}`}>{exp.company}</p>
+                      <p className="text-gray-500 text-sm" data-testid={`experience-location-${exp.id}`}>{exp.location}</p>
+                    </div>
+                    <div className="text-gray-500 mt-2 md:mt-0">
+                      <p className="font-mono text-sm" data-testid={`experience-duration-${exp.id}`}>{exp.duration}</p>
+                    </div>
                   </div>
-                  <div className="text-gray-500 mt-2 md:mt-0">
-                    <p className="font-medium" data-testid={`experience-duration-${exp.id}`}>{exp.duration}</p>
-                  </div>
+                  <ul className="space-y-3 text-gray-700">
+                    {exp.achievements.map((achievement, index) => (
+                      <li key={index} className="flex items-start" data-testid={`experience-achievement-${exp.id}-${index}`}>
+                        <span className="w-1 h-1 rounded-full bg-primary mt-2.5 mr-3 flex-shrink-0"></span>
+                        <span>{achievement}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <ul className="space-y-3 text-gray-700">
-                  {exp.achievements.map((achievement, index) => (
-                    <li key={index} className="flex items-start" data-testid={`experience-achievement-${exp.id}-${index}`}>
-                      <i className="fas fa-check-circle text-green-500 mt-1 mr-3 flex-shrink-0"></i>
-                      <span>{achievement}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
             ))}
           </div>

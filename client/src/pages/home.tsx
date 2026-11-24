@@ -31,12 +31,12 @@ export default function Home() {
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-gray-400 mb-4">
-              © 2024 Shorya Dwivedi. Built with passion for DevOps and MLOps.
+            <p className="text-gray-400 mb-4 font-mono text-sm">
+              © 2026 Shorya Dwivedi. Built for agentic AI & DevOps work.
             </p>
             <div className="flex justify-center gap-6">
               <a 
-                href="https://linkedin.com/in/shoryadubey" 
+                href="https://linkedin.com/in/shoryadwivedi" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"

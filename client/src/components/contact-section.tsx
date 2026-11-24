@@ -88,10 +88,10 @@ export default function ContactSection() {
           ref={ref}
           className={`animate-on-scroll ${isVisible ? 'animated' : ''}`}
         >
-          <h2 className="text-3xl lg:text-4xl font-bold text-center mb-16 gradient-text" data-testid="contact-title">Get In Touch</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-center mb-16 section-heading justify-center" data-testid="contact-title">Get In Touch</h2>
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-2xl font-semibold mb-6 text-gray-900" data-testid="contact-connect-title">Let's Connect</h3>
+              <h3 className="text-2xl font-display font-semibold mb-6 text-gray-900" data-testid="contact-connect-title">Let's Connect</h3>
               <p className="text-lg text-gray-600 mb-8" data-testid="contact-description">
                 I'm actively seeking contract-based opportunities in cloud automation and DevOps consulting. 
                 Let's discuss how I can help optimize your infrastructure and development workflows.
@@ -127,10 +127,10 @@ export default function ContactSection() {
               
               <div className="flex gap-6 mt-8">
                 <a 
-                  href="https://linkedin.com/in/shoryadubey" 
+                  href="https://linkedin.com/in/shoryadwivedi" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-primary transition-colors"
+                  className="text-gray-500 hover:text-primary transition-colors"
                   data-testid="contact-linkedin-link"
                 >
                   <i className="fab fa-linkedin text-3xl"></i>
@@ -147,7 +147,7 @@ export default function ContactSection() {
               </div>
             </div>
             
-            <div className="bg-slate-50 p-8 rounded-xl">
+            <div className="panel p-8">
               <form onSubmit={handleSubmit} className="space-y-6" data-testid="contact-form">
                 <div>
                   <Label htmlFor="name" data-testid="label-name">Name</Label>
