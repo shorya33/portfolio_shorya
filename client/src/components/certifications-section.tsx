@@ -19,13 +19,6 @@ export default function CertificationsSection() {
       description: "Validated expertise in developing, deploying, and debugging cloud-based applications using AWS services."
     },
     {
-      id: "aws-architect",
-      icon: "fab fa-aws",
-      title: "AWS Certified Solutions Architect",
-      issuer: "Associate Level",
-      description: "Validated expertise in designing distributed, highly available, and fault-tolerant systems on AWS."
-    },
-    {
       id: "github",
       icon: "fab fa-github",
       title: "GitHub Actions Certification",
